@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUTHAMIZHARASI MURUGAN– Portfolio</title>
+
+    <style>
+        /* Global Setup */
+        * {
+            margin: 1;
+            padding: 1;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0b022e, #001D4A, #1f0355, #6e005f);
+            background-size: 200% 200%;
+            animation: gradientMove 8s infinite alternate;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: left; }
+            100% { background-position: right; }
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 120px 80px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .created {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .author {
+            font-weight: 700;
+            color: #ffdd72;
+        }
+
+        .hero-art {
+            position: relative;
+        }
+
+        .profile-wrapper {
+            width: 320px;
+            height: 320px;
+            position: relative;
+        }
+
+        .profile-wrapper svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .profile-wrapper img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            object-fit: cover;
+        }
+
+        /* Section Titles */
+        section h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: "";
+            width: 70px;
+            height: 4px;
+            background: #ffdd72;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* About Section */
+        .about-box {
+            width: 70%;
+            margin: auto;
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255,255,255,0.08);
+            border-left: 5px solid #ff9100;
+            border-radius: 10px;
+            line-height: 1.8;
+        }
+
+        /* Education */
+        .education .edu-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .edu-card {
+            width: 280px;
+            padding: 25px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            text-align: center;
+            margin: 15px;
+            transition: 0.3s;
+        }
+
+        .edu-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.14);
+        }
+
+        .edu-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .small {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* Skills */
+        .skills-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Projects */
+        .project-box {
+            width: 75%;
+            margin: 30px auto;
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 10px;
+            line-height: 1.7;
+        }
+
+        /* Lists */
+        .languages ul,
+        .hobbies ul,
+        .certifications ul {
+            width: 60%;
+            margin: auto;
+            margin-top: 30px;
+            padding-left: 20px;
+        }
+
+        .languages li,
+        .hobbies li,
+        .certifications li {
+            padding: 8px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Portfolio<br>Presentation</h1>
+        <p class="created">Created by <span class="author">MUTHAMIZHARASI MURUGAN</span></p>
+    </div>
+
+    <div class="hero-art">
+        <div class="profile-wrapper">
+            <svg width="320" height="320" viewBox="0 0 300 300">
+                <circle cx="150" cy="150" r="140" fill="#fbd46d"/>
+            </svg>
+
+            <img src="thamizh.jpg.jpeg" alt="Profile Image">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="about">
+    <h2>About Me</h2>
+    <div class="about-box">
+        <p>
+        I am a dedicated and motivated aspiring Full Stack Developer with a strong 
+        interest in designing and developing efficient, scalable, and user-focused 
+        web applications. My academic background in Computer Science Engineering has 
+        provided me with a solid foundation in programming, problem-solving, and 
+        software development principles.
+        <br><br>
+        <section class="contact-section">
+    <div class="contact-left">
+        <div class="contact-item">
+            <span class="icon">✉️</span>
+            <p>muthamizharasi2405@gmail.com</p>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📞</span>
+            <p>6374143991</p>
+        </div>
+
+        <div class="contact-item">
+            <span class="icon">📍</span>
+            <p>154/keezh street, Tindivanam – 604154</p>
+        </div>
+    </div>
+
+    <div class="contact-right">
+        <h2>Let's<br>Connect</h2>
+        <div class="divider"></div>
+        <p class="small-text">
+            Presentations are communication tools that can be used as 
+            demonstrations, lectures, and more.
+        </p>
+    </div>
+</section>
+Developed an innovative solution for a real-world problem by collaborating with a team to design and build a functional prototype. Focused on problem analysis, user-centric design, and implementing an efficient technical solution
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education">
+    <h2>Educational Background</h2>
+
+    <div class="edu-row">
+
+        <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <h3>Government Higher Secondary School</h3>
+            <p>HSC (2022–2023)</p>
+            <p class="small">Percentage: 77%</p>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-icon">🏫</div>
+            <h3>Government Girls Hr. Sec. School</h3>
+            <p>SSLC (2020–2021)</p>
+            <p class="small">Percentage: 100%</p>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <h3>Anand Institute of Higher Technology</h3>
+            <p>B.E CSE (2023–2027)</p>
+            <p class="small">CGPA: 8.4</p>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certifications">
+    <h2>Courses & Certificates</h2>
+    <ul>
+        <li>Python Programming Internship at Interpe</li><br>
+            <p>Developed an innovative solution for a real-world 
+                problem by collaborating with a team to design and build a functional prototype. 
+                Focused on problem analysis, user-centric design, and implementing an efficient technical solution</p>
+        <li>MongoDB Course with Hands-on NoSQL Practice</li>
+        <p>This MongoDB course provides a complete introduction 
+        to NoSQL database concepts with real-time, practical exposure.
+         You will learn how to design, store, and manage data using MongoDB,
+          one of the most widely used NoSQL databases in modern applications.
+           The course focuses on hands-on learning, enabling you to build schemas, 
+           work with collections, run queries, and optimize database performance.
+           You will practice CRUD operations, indexing, aggregation pipelines, 
+           and data modeling techniques that are essential for backend and full-stack development.
+            Through real-world exercises and projects, you will understand how MongoDB handles unstructured and semi-structured
+             data, and how it integrates seamlessly with Node.js and modern cloud platforms. By the end of this course, you will
+              have strong practical experience in NoSQL systems and the confidence to build scalable and flexible database
+               solutions.</p>
+    </ul>
+</section>
+
+<!-- PROJECTS SLIDE -->
+<section class="projects-section">
+    <h2 class="projects-title">My Projects</h2>
+
+    <p class="projects-subtitle">
+        <center> 1.SMART INDIA HACKTHON - DEVELOPMENT OF SMART DIGITAL PLATFORM TO PROMTE ECO &CULTURE TOURISM IN JHARKHAND</center>
+    </p>
+
+    <div class="projects-container">
+
+        <!-- Left Project -->
+        <div class="project-card">
+            <center>><img src="sih.jpg" class="project-img"></center>
+
+            <button class="project-btn red-btn"></button>
+
+            <p class="project-desc">
+                <center>Smart India Hackathon – Eco & Culture Tourism Platform (Jharkhand):-</center><br>
+                           Developed a smart digital platform to promote Jharkhand’s 
+                           eco-tourism and cultural heritage. The system highlights natural attractions, tribal culture, and local artisans 
+                           through an interactive map, smart itinerary planner, and community-focused features. The platform encourages 
+                           responsible tourism, boosts local economy, and offers a seamless travel experience with real-time guidance and essential services.
+            </p>
+        </div>
+
+        <!-- Right Project -->
+        <div class="project-card">
+           <center><img src="non.jpg" alt="NGO Website" class="project-img"></center>
+           <p class="projects-subtitle"></p> 
+            <center>2.NON GOVERNMENT ORGONIZATION WEBSITE</center>
+             <button class="project-btn blue-btn"></button>
+             <p class="project-desc">
+                <center>Built using HTML, CSS & JavaScript. Created a responsive website to improve the NGO's
+                online visibility and engagement using modern UI/UX principles.</center><br>
+               <center> NGO Website – Online Presence :-</center><br>
+                   <center>Created a clean and responsive website for an NGO to improve their 
+                   online visibility. The platform highlights their mission, services, donation details,
+                    and volunteer activities, helping them reach more people and build stronger community engagement.</center>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+    <h2>Skill Abilities</h2>
+
+    <div class="skills-row">
+
+        <div class="skill-item">
+            <canvas id="skillA" width="150" height="150"></canvas>
+            <h4>Python Programming</h4>
+        </div>
+
+        <div class="skill-item">
+            <canvas id="skillB" width="150" height="150"></canvas>
+            <h4>SQL / Java / C</h4>
+        </div>
+
+        <div class="skill-item">
+            <canvas id="skillC" width="150" height="150"></canvas>
+            <h4>Frontend Basics</h4>
+        </div>
+
+    </div>
+</section>
+
+<!-- HOBBIES + LANGUAGES TEMPLATE -->
+<section class="hobby-template">
+    <div class="hobby-wrapper">
+
+        <!-- LEFT SIDE IMAGES (HOBBIES) -->
+        <div class="hobby-left">
+
+            <div class="hobby-img-box">
+                <img src="music.jpg" alt="Music">
+                <span class="hobby-tag purple">Music</span>
+            </div>
+
+            <div class="hobby-img-box">
+                <img src="cycling.jpg" alt="Cycling">
+                <span class="hobby-tag orange">Cycling</span>
+            </div>
+
+            <div class="hobby-img-box">
+                <img src="book.jpg" alt="Pets">
+                <span class="hobby-tag blue">Pets</span>
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE TEXT -->
+        <div class="hobby-right">
+            <h2>Hobbies &<br>Interests</h2>
+
+            <div class="small-line"></div>
+
+            <p class="desc">
+                Presentations are communication tools that can be used as
+                demonstrations, lectures, and more.
+            </p>
+
+            <!-- LANGUAGE SECTION -->
+            <h3 class="lang-title">Languages</h3>
+            <ul class="lang-list">
+                <li>Tamil</li>
+                <li>English</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+/* MAIN BACKGROUND */
+.hobby-template {
+    padding: 60px 50px;
+    background: linear-gradient(135deg, #0b022e, #001D4A, #1f0355, #6e005f);
+    background-size: 200% 200%;
+    border-radius: 10px;
+    color: white;
+}
+
+/* FLEX WRAPPER */
+.hobby-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* LEFT IMAGES */
+.hobby-left {
+    width: 55%;
+}
+
+.hobby-img-box {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.hobby-img-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* LABEL TAGS */
+.hobby-tag {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    padding: 8px 22px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* COLORS */
+.purple { background: #5c34ff; }
+.orange { background: #ff7b47; }
+.blue { background: #3b82f6; }
+
+/* RIGHT SIDE */
+.hobby-right {
+    width: 40%;
+    padding-left: 30px;
+}
+<!-- THANK YOU SLIDE -->
+<section class="thankyou">
+    <div class="ty-left"></div>
+    <div class="ty-right"></div>
+
+    <h1 class="ty-title">Thank You</h1>
+    <div class="ty-line"></div>
+    <p class="ty-sub">Presentations are communication tools.</p>
+
+    <div class="ty-profile">
+        <img src="thamizh.jpg.jpeg" alt="Profile">
+        <p>Created by<br><span>MUTHAMIZHARASI MURUGAN</span></p>
+    </div>
+</section>
+
+<!-- JAVASCRIPT FOR SKILL CIRCLES -->
+<script>
+    function drawCircle(id, percent, color1, color2) {
+        let canvas = document.getElementById(id);
+        let ctx = canvas.getContext("2d");
+        let center = canvas.width / 2;
+        let radius = 60;
+        let start = -0.5 * Math.PI;
+        let end = (percent / 100) * 2 * Math.PI + start;
+
+        ctx.lineWidth = 15;
+
+        ctx.strokeStyle = color2;
+        ctx.beginPath();
+        ctx.arc(center, center, radius, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        ctx.strokeStyle = color1;
+        ctx.beginPath();
+        ctx.arc(center, center, radius, start, end);
+        ctx.stroke();
+    }
+
+    drawCircle("skillA", 90, "#ffb700", "#4c3c00");
+    drawCircle("skillB", 80, "#00eaff", "#003e47");
+    drawCircle("skillC", 75, "#ff5e3a", "#4a0f04");
+</script>
+
+</body>
+</html>

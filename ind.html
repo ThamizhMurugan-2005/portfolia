@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUTHAMIZHARASI MURUGAN– Portfolio</title>
+<!-- PORTFOLIO PRESENTATION SLIDE -->
+<section class="title-slide">
+
+    <div class="title-content">
+        <h1>Portfolio<br>Presentation</h1>
+
+        <div class="small-line"></div>
+
+        <p class="created-text">Created by <span class="highlight">Muthamizharasi Murugan</span></p>
+    </div>
+
+    <div class="title-design">
+        <svg width="350" height="350" viewBox="0 0 400 400">
+            <polyline 
+                points="50,10 200,10 350,120 280,300 120,350 60,200 50,10" 
+                style="fill:none;stroke:#ff7b29;stroke-width:8;stroke-linejoin:round;" />
+        </svg>
+    </div>
+
+</section>
+
+
+<style>
+/* MAIN SLIDE BACKGROUND */
+.title-slide {
+    width: 100%;
+    height: 350px;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(135deg, #e62e73, #0b022e, #001D4A, #1f0355, #6e005f);
+    background-size: 200% 200%;
+    animation: gradientMove 8s infinite alternate;
+    color: white;
+    border-radius: 10px;
+}
+
+/* GRADIENT ANIMATION */
+@keyframes gradientMove {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* LEFT TEXT */
+.title-content h1 {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.small-line {
+    width: 90px;
+    height: 4px;
+    margin: 20px 0;
+    background: #ffdd72;
+}
+
+.created-text {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.highlight {
+    font-weight: 700;
+    color: #ffd66e;
+}
+
+/* RIGHT POLYGON SHAPE */
+.title-design svg {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .title-slide {
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .title-design {
+        margin-top: 20px;
+    }
+}
+</style>
+<style>
+        /* Global Setup */
+        * {
+            margin: 1;
+            padding: 1;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0b022e, #001D4A, #1f0355, #6e005f);
+            background-size: 200% 200%;
+            animation: gradientMove 8s infinite alternate;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: left; }
+            100% { background-position: right; }
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 120px 80px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 700;
+        }
+
+        .created {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .author {
+            font-weight: 700;
+            color: #ffdd72;
+        }
+
+        .hero-art {
+            position: relative;
+        }
+
+        .profile-wrapper {
+            width: 320px;
+            height: 320px;
+            position: relative;
+        }
+
+        .profile-wrapper svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .profile-wrapper img {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            object-fit: cover;
+        }
+
+        /* Section Titles */
+        section h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 70px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: "";
+            width: 70px;
+            height: 4px;
+            background: #ffdd72;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+<!-- ABOUT ME SECTION -->
+<section class="about-section">
+
+    <div class="about-container">
+
+        <!-- Profile Image -->
+        <div class="about-img">
+            <div class="img-ring">
+                <img src="thamizh.jpg" alt="Muthamizharasi Murugan">
+            </div>
+        </div>
+
+        <!-- About Text -->
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p class="myname">My Name is <span>Muthamizharasi Murugan</span></p>
+
+            <p class="about-description">
+                I am a passionate Computer Science Engineering student with strong interest in 
+                software development, problem-solving, and modern technologies.  
+                I believe in continuous learning and enjoy building projects that enhance my 
+                technical and creative skills.  
+                My goal is to become a full-stack developer and create innovative digital solutions.
+            </p>
+
+            <div class="about-extra">
+                <p><strong>Languages:</strong> Tamil, English</p>
+                <p><strong>Hobbies:</strong> Designing, Coding, Listening Music</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Decorative Polygon -->
+    <div class="about-design">
+        <svg width="350" height="350" viewBox="0 0 400 400">
+            <polyline 
+                points="50,10 200,10 350,120 280,300 120,350 60,200 50,10" 
+                style="fill:none;stroke:#ff7b29;stroke-width:8;stroke-linejoin:round;" />
+        </svg>
+    </div>
+
+</section>
